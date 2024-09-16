@@ -1,20 +1,22 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
+const connectDB = require('./config/db');
+require('dotenv').config();
+
 const app = express();
+
+connectDB();
 
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb+srv://shreeyanaditya:LHlD6cLdumUbdOAm@cluster0.nuqy0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
-.then(() => console.log('Connected to MongoDB Atlas'))
-.catch((error) => console.log('MongoDB Atlas connection error: ', error));
+app.use('/api/todos', require('./routes/todoRoutes'));
 
 app.get('/', (req,res) => {
     res.send('Hello from backend');
 });
 
-const PORT = 5000;
-app.listen(PORT, () => {
-    console.log(`Server running on ${PORT}`);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
 });
