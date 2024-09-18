@@ -5,8 +5,8 @@ A full-stack To-Do list web application built with **React** (frontend), **Node.
 ## Table of Contents
 
 - [Features](#features)
-- [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
 
 ---
 
