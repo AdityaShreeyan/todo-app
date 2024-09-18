@@ -39,14 +39,15 @@ A full-stack To-Do list web application built with **React** (frontend), **Node.
 
 ```
 todo-app/
-├── backend/                # Backend Node.js API
-│   ├── routes/             # API Routes for todos
+├── backend/                # Backend Node.js
+│   ├── config/             # Connect to MongoDB
 │   ├── models/             # Mongoose models
+│   ├── routes/             # API Routes for todos
 │   ├── server.js           # Main server file
 │   ├── package.json        # Backend dependencies
 ├── frontend/               # Frontend React App
-│   ├── src/                # React components
 │   ├── public/             # Public assets (index.html, etc.)
+│   ├── src/                # React components
 │   ├── package.json        # Frontend dependencies
 ├── .gitignore              # Ignored files for Git
 ├── README.md               # Project documentation
