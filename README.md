@@ -15,7 +15,23 @@ A full-stack To-Do list web application built with **React** (frontend), **Node.
 - Add, update, and delete tasks (CRUD operations)
 - Persist tasks using MongoDB
 - User-friendly interface with React
-- Responsive design
+
+---
+
+## Technologies Used
+
+### Frontend:
+- React
+- Axios (for API requests)
+- CSS
+
+### Backend:
+- Node.js
+- Express.js
+- MongoDB (with Mongoose)
+
+### Database:
+- MongoDB Atlas (cloud-based)
 
 ---
 
@@ -36,20 +52,7 @@ todo-app/
 ├── README.md               # Project documentation
 ```
 
----
 
-## Technologies Used
 
-### Frontend:
-- React
-- Axios (for API requests)
-- CSS
 
-### Backend:
-- Node.js
-- Express.js
-- MongoDB (with Mongoose)
-
-### Database:
-- MongoDB Atlas (cloud-based)
 
