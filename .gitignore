@@ -17,6 +17,7 @@
 /dist
 
 # misc
+/frontend/README.md
 .DS_Store
 .env.local
 .env.development.local
